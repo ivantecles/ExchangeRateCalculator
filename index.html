@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>Exchange Rate Calculator</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the <strong>amount</strong> and the <strong>currencies</strong>.</p>
+
+    <div class="parameters">
+      <div class="amount">
+        <input type="number" id="amount-to-convert" placeholder="0" value="1" />
+      </div>
+
+      <div class="currency">
+        <select id="first-currency">
+          <option value="EUR">EUR</option>
+          <option value="GBP" selected>GBP</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+
+      <div class="swap">
+        <button class="btn" id="swap-currencies">&#8596;</button>
+      </div>
+
+      <div class="currency">
+        <select id="second-currency">
+          <option value="EUR" selected>EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="results">
+      <div id="conversion-from"></div>
+      <div id="conversion-to"></div>
+      <div id="conversion-rate"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #E98074;
+  --background-color: #F3D250;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oxygen', Arial, sans-serif;
+  font-size: 18px;
+  background-color: var(--background-color);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  animation: bg 3s none;
+}
+
+@keyframes bg {
+  0% {
+    background-color: #F0F0F0;
+  }
+  100% {
+    background-color: var(--background-color);
+  }
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.parameters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.parameters > .amount > input {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.parameters > .amount > input,
+.parameters > .currency > select {
+  font-size: 1.25em;
+  height: 50px;
+  width: 135px;
+  border: 1px solid #0F0F0F;
+  padding: 10px;
+}
+
+.parameters > .swap > .btn {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results > #conversion-to {
+  font-size: 3em;
+}
+
+.results > #conversion-rate {
+  color: var(--primary-color);
+  font-size: 0.9em;
+  font-style: italic;
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .parameters > .amount > input,
+  .parameters > .currency > select {
+    width: 80px;
+  }
+}
