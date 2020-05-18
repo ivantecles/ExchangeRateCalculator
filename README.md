@@ -31,4 +31,4 @@ The project has a **src** folder that includes...
 
 2) Open the project in Visual Studio Code and launch it with the Live Server extension (from the **index.html** file).
 
-3) Congratulations! Now you can get the best exchange rates :smiley:# ExchangeRateCalculator
+3) Congratulations! Now you can get the best exchange rates :smiley:
