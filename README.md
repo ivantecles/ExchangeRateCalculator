@@ -7,8 +7,10 @@
 * [Installation and Usage](#installation-and-usage)
 
 ## General Information
-Exchange rate calculator (GBP, EUR and USD currencies).
+Exchange Rate Calculator (GBP, EUR and USD currencies).
 	
+![Exchange rate calculator](https://github.com/ivantecles/ExchangeRateCalculator/blob/master/img/ExchangeRateCalculator.png?raw=true)
+
 ## Technologies
 The project uses the following technologies:
 * HTML5
