@@ -26,6 +26,7 @@ The project has a **src** folder that includes...
 > /index.html\
 > /css/style.css\
 > /js/script.js\
+> /img/ExchangeRateCalculator.png\
 > /README.md
 
 ## Installation and Usage
